@@ -46,10 +46,11 @@ function preload() {
 //
 
 function setup(){
-  createCanvas(windowWidth - 3, windowHeight - 3); //TODO better way of ensuring scrollbars don't show up
+  createCanvas(windowWidth, windowHeight); //TODO better way of ensuring scrollbars don't show up
   
   //layout
   imageMode(CENTER); //draws the image from center coordinates instead of corner
+  angleMode(RADIANS);
   textAlign(CENTER, CENTER); //aligns the text to the center horizontally, and to the bottom vertically
   // textFont(font);
   noStroke();//removes the outline so the text isn't as thick
